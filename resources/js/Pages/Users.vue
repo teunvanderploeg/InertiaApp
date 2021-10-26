@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-4xl font-bold">Home Page</h1>
+    <h1 class="text-4xl font-bold">Users Page</h1>
     <Nav />
 </template>
 <script>

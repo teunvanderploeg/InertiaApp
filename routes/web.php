@@ -14,9 +14,15 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Home', [
-        'name' => 'Teun van der Ploeg',
-        'frameworks' => ['Laravel', 'Vue', 'Inertia'],
-    ]);
+Route::get('/home', function () {
+    return Inertia::render('Home');
+});
+Route::get('/users', function () {
+    return Inertia::render('Users');
+});
+Route::get('/settings', function () {
+    return Inertia::render('Settings');
+});
+Route::post('/logout', function () {
+    dd('Login the user out. Data: ' . request('foo'));
 });
