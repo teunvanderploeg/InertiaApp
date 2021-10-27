@@ -1,11 +1,7 @@
 <template>
     <h1 class="text-4xl font-bold">Users Page</h1>
     <Nav/>
-
-    <div class="" style="margin-top: 1000px">
-        <p>The current time is {{ time }}.</p>
-    </div>
-    <Link href="/users" class="text-blue-500" preserve-scroll>refresh</Link>
+    <p class="pt-4" v-text="time"></p>
 </template>
 <script>
 import Nav from "../Shared/Nav";
