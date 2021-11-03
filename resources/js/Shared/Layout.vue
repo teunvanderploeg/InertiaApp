@@ -20,9 +20,9 @@ import Nav from "./Nav";
 
 export default {
     name: "Layout.vue",
-    components: {Nav}
+    components: {Nav},
 
-    computed:{
+    computed: {
         username() {
             return this.$page.props.auth.user.username;
         }
