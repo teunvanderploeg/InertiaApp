@@ -1,14 +1,14 @@
 <template>
-    <h1 class="text-4xl font-bold">Users Page</h1>
-    <Nav/>
-    <p class="pt-4" v-text="time"></p>
+    <Layout>
+        <h2 class="text-4xl font-bold">Users Page</h2>
+        <p class="pt-4" v-text="time"></p>
+    </Layout>
 </template>
 <script>
-import Nav from "../Shared/Nav";
-import {Link} from "@inertiajs/inertia-vue3"
+import Layout from "../Shared/Layout"
 
 export default {
-    components: {Nav, Link},
+    components: {Layout},
     props: {
         time: String,
     }
