@@ -3,10 +3,7 @@
         <p class="pt-4" v-text="time"></p>
 </template>
 <script>
-import Layout from "../Shared/Layout"
-
 export default {
-    layout: Layout,
     props: { time: String},
 }
 </script>
