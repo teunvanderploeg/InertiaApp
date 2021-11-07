@@ -6,7 +6,3 @@
 <script setup>
 import Layout from "../Shared/Layout"
 </script>
-
-<style scoped>
-
-</style>

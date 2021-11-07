@@ -22,7 +22,3 @@ export default {
     components: {NavLink },
 }
 </script>
-
-<style scoped>
-
-</style>

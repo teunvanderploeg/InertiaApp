@@ -11,7 +11,3 @@ defineProps({
     time: String
 });
 </script>
-
-<style scoped>
-
-</style>
