@@ -1,11 +1,11 @@
 <template>
-        <Link class="text-black hover:underline" :class="{'font-bold underline' : active}">
-            <slot />
-        </Link>
+    <Link class="text-black hover:underline" :class="{'font-bold underline' : active}">
+        <slot/>
+    </Link>
 </template>
 
 <script>
-import { Link } from '@inertiajs/inertia-vue3'
+import {Link} from '@inertiajs/inertia-vue3'
 
 export default {
     name: "NavLink",
