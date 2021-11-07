@@ -4,10 +4,11 @@
         <p class="pt-4" v-text="time"></p>
     </Layout>
 </template>
-<script setup>
+<script>
 import Layout from "../Shared/Layout"
 
-defineProps({
-    time: String
-});
+export default {
+    components: { Layout },
+    props: { time: String},
+}
 </script>
