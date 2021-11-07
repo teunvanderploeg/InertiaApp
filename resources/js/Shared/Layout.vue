@@ -13,7 +13,7 @@
         </header>
     </section>
     <section class="p-6">
-        <div class="max-w-3xl mx-auto bg-gray-200">
+        <div class="max-w-3xl mx-auto">
             <slot/>
         </div>
     </section>
