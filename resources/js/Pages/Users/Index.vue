@@ -1,7 +1,10 @@
 <template>
     <Head title="Users"/>
     <div class="flex justify-between mb-6">
-        <h2 class="text-4xl font-bold">Users Page</h2>
+        <div class="flex items-center">
+            <h2 class="text-4xl font-bold">Users Page</h2>
+            <Link href="/users/create" class="text-green-500 text-sm ml-3 mt-auto hover:text-green-600">New User</Link>
+        </div>
         <input v-model="search" type="text" placeholder="Search..." class="border px-2 rounded">
     </div>
     <div class="flex flex-col">
@@ -15,7 +18,7 @@
                                 <div class="flex items-center">
                                     <div>
                                         <div class="text-sm font-medium text-gray-900">
-                                            {{user.name}}
+                                            {{ user.name }}
                                         </div>
                                     </div>
                                 </div>
@@ -30,11 +33,11 @@
             </div>
         </div>
     </div>
-<!--    Paginator   -->
-<Pagination :links="users.links" class="mt-4 text-center" />
+    <!--    Paginator   -->
+    <Pagination :links="users.links" class="mt-4 text-center"/>
 </template>
 <script setup>
-import Pagination from "../Shared/Pagination";
+import Pagination from "../../Shared/Pagination";
 import {ref, watch} from "vue";
 import {Inertia} from "@inertiajs/inertia"
 
